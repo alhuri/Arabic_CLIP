@@ -31,6 +31,8 @@ import time
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Callable, Optional
+from PIL import ImageFile
+ImageFile.LOAD_TRUNCATED_IMAGES = True
 
 import torch
 from torchvision.datasets import VisionDataset
